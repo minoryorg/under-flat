@@ -35,7 +35,7 @@
 <div id="page" class="site">
 	
 	<header id="masthead" class="site-header" role="banner">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top navbar-<?php echo get_option( 'color' ); ?>">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
