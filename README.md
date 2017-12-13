@@ -62,7 +62,7 @@ Bootstrapをフラットデザインに変えてくれるCSSフレームワー�
         $('.site-content').addClass('container');
         $('.site-info').addClass('container');
         $('.content-area').addClass('col-md-8');
-    	// Widget
+        // Widget
         $('.widget-area').addClass('col-md-4');
         $('.widget > ul').addClass('nav nav-pills nav-stacked withripple');
         // Recent Comments
@@ -117,11 +117,11 @@ Bootstrapをフラットデザインに変えてくれるCSSフレームワー�
 
 ### functions.php
     function under_flat_widgets_init() {
-    	register_sidebar( array(
-    	・・・
-    		'before_widget' => '<section id="%1$s" class="panel panel-' . get_option( 'color' ) . ' widget %2$s">',
-    	・・・
-    	) );
+        register_sidebar( array(
+        ・・・
+        'before_widget' => '<section id="%1$s" class="panel panel-' . get_option( 'color' ) . ' widget %2$s">',
+        ・・・
+        ) );
     }
     
 ### header.php
