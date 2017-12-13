@@ -58,16 +58,15 @@ Bootstrapをフラットデザインに変えてくれるCSSフレームワー�
 
 ### footer.php
     <script type="text/javascript">
+    $(document).ready(function() {
         // Content
         $('.site-content').addClass('container');
         $('.site-info').addClass('container');
         $('.content-area').addClass('col-md-8');
-        // Widget
+    	// Widget
         $('.widget-area').addClass('col-md-4');
-        $('.widget > ul').addClass('nav nav-pills nav-stacked withripple');
-        // Recent Comments
-        $('.widget > #recentcomments').removeClass('');
-        $('.widget > #recentcomments').addClass('panel-body');
+        $('.widget > ul').addClass('list-group');
+        $('.widget > ul > li').addClass('list-group-item');
         // Calendar
         $('#calendar_wrap').addClass('panel-body');
         $('#wp-calendar').addClass('table');
@@ -77,7 +76,7 @@ Bootstrapをフラットデザインに変えてくれるCSSフレームワー�
         $('.tagcloud').addClass('panel-body');
         // Form
         $('select,textarea,input:not([type=button],[type=submit])').addClass('form-control');
-        $('[type=submit]').addClass('btn btn-raised btn-default');
+        $('[type=button],[type=submit]').addClass('btn btn-default');
         // Add to ...
     });
     </script>
