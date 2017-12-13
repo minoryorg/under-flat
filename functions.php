@@ -102,12 +102,12 @@ add_action( 'widgets_init', 'under_flat_widgets_init' );
  * Enqueue scripts and styles.
  */
 function under_flat_scripts() {
-	wp_enqueue_style( 'under-flat-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'under-flat-roboto', '//fonts.googleapis.com/css?family=Roboto:300,400,500,700' );
 	wp_enqueue_style( 'under-flat-icons', '//fonts.googleapis.com/icon?family=flat+Icons' );
 	wp_enqueue_style( 'under-flat-font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'under-flat-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
 	wp_enqueue_style( 'under-flat-design', '//cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css' );
+	wp_enqueue_style( 'under-flat-style', get_stylesheet_uri() );
 	
 	wp_enqueue_script( 'under-flat-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20170901', true );
 	wp_enqueue_script( 'under-flat-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20170901', true );
